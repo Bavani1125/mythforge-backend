@@ -180,9 +180,8 @@ export const getMythById = async (req, res) => {
       return res.status(404).json({ message: "Myth not found" });
     }
 
-    return res.json({
-      myth: result.rows[0],
-    });
+    return res.json(result.rows[0]);
+
 
   } catch (err) {
     console.error("❌ Get myth by ID error:", err);

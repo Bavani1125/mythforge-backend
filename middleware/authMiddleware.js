@@ -42,3 +42,5 @@ export const requireRole = (requiredRole) => {
 
 // Alias for compatibility (optional)
 export const authenticate = verifyToken;
+
+
